@@ -5,14 +5,14 @@ The goal is to learn about sorting algorithms.
 
 ## Functionality
 
-The program takes a list of numbers and sorts them from lowest to highest.  
+The push_swap program takes a list of numbers and sorts them from lowest to highest.  
 To do this it uses 2 stacks and a set of predetermined operations that change the positions of the numbers on the stacks. The [operations](#operations).  
-The program handles input as one string of integers, integers as separate arguments or a mix of the two.  
+The push_swap program handles input as one string of integers, integers as separate arguments or a mix of the two.  
 The checker program takes a list of integers and then reads from standard input operations to be executed on the stacks. Once an EOF is encountered the program checks if the list has been sorted and prints an OK if yes and KO if not.
 
 ## Usage
 
-Clone the project and run 'make' in the repository. For the checker program run 'make bonus'.
+Clone the project and run 'make' in the repository. For the checker program run 'make bonus'.  
 Once compiled run the program with a list of integers as arguments.  
 For the checker run the program with a list of integers as arguments and then input operations to sort them.
 
