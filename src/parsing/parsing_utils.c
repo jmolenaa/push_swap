@@ -6,11 +6,12 @@
 /*   By: jmolenaa <jmolenaa@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/15 12:38:05 by jmolenaa      #+#    #+#                 */
-/*   Updated: 2023/04/12 12:53:56 by jmolenaa      ########   odam.nl         */
+/*   Updated: 2023/10/15 17:28:27 by jmolenaa      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+#include <limits.h>
 #include "libft.h"
 
 void	check_if_valid_number(char *nbr)
@@ -72,7 +73,7 @@ static t_number	*get_lowest_number(t_number *stack_a_head)
 	t_number	*lowest;
 	int			number;
 
-	number = INT32_MAX;
+	number = INT_MAX;
 	lowest = NULL;
 	temp = stack_a_head;
 	while (temp != stack_a_head->prev)

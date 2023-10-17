@@ -26,8 +26,8 @@ endif
 
 all: $(LIBFT_DIR) $(NAME)
 
-$(NAME): $(LIBFT) $(OBJ_PUSH_SWAP)
-	@$(CC) $(CFLAGS) $(INCLUDES) -o $@ $^
+$(NAME): $(OBJ_PUSH_SWAP) $(LIBFT)
+	$(CC) $(CFLAGS) $(INCLUDES) -o $@ $^
 
 $(LIBFT_DIR):
 	@git clone https://github.com/jmolenaa/Codam_libft $(LIBFT_DIR)

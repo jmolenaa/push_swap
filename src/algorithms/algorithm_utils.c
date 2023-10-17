@@ -6,19 +6,20 @@
 /*   By: jmolenaa <jmolenaa@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/06 13:11:14 by jmolenaa      #+#    #+#                 */
-/*   Updated: 2023/04/12 12:14:52 by jmolenaa      ########   odam.nl         */
+/*   Updated: 2023/10/15 17:28:49 by jmolenaa      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include <stdlib.h>
+#include <limits.h>
 
 size_t	lowest(t_number **stack_a)
 {
 	t_number	*temp;
 	size_t		lowest;
 
-	lowest = INT32_MAX;
+	lowest = INT_MAX;
 	temp = *stack_a;
 	while (temp != (*stack_a)->prev)
 	{

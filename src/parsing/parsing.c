@@ -6,13 +6,14 @@
 /*   By: jmolenaa <jmolenaa@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/14 17:08:37 by jmolenaa      #+#    #+#                 */
-/*   Updated: 2023/04/12 11:51:16 by jmolenaa      ########   odam.nl         */
+/*   Updated: 2023/10/15 17:28:08 by jmolenaa      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "libft.h"
 #include <sys/errno.h>
+#include <limits.h>
 
 static int	change_string_to_number(char *str)
 {
@@ -34,7 +35,7 @@ static int	change_string_to_number(char *str)
 		i++;
 	}
 	number = number * sign;
-	if (number > INT32_MAX || number < INT32_MIN)
+	if (number > INT_MAX || number < INT_MIN)
 		ft_exit_with_error("Error\n", EXIT_FAILURE);
 	return ((int)number);
 }

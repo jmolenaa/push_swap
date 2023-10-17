@@ -6,12 +6,13 @@
 /*   By: jmolenaa <jmolenaa@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/04/10 11:02:41 by jmolenaa      #+#    #+#                 */
-/*   Updated: 2023/04/12 13:17:52 by jmolenaa      ########   odam.nl         */
+/*   Updated: 2023/10/15 17:29:20 by jmolenaa      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include <stdlib.h>
+#include <limits.h>
 
 void	adjust_steps(t_rot *rotation, t_rot temp_a, size_t i, t_rotate rotate)
 {
@@ -90,7 +91,7 @@ static void	path_up(t_info info, t_rot *rotation, int current_block)
 
 void	find_path(t_info info, t_rot *rotation, int current_block)
 {
-	rotation->steps_total = UINT32_MAX;
+	rotation->steps_total = UINT_MAX;
 	path_up(info, rotation, current_block);
 	path_down(info, rotation, current_block);
 }
