@@ -51,7 +51,7 @@ fclean: clean
 
 bonus: $(CHECKER)
 
-$(CHECKER): $(LIBFT) $(OBJ_CHECKER)
+$(CHECKER): $(OBJ_CHECKER) $(LIBFT)
 	@$(CC) $(CFLAGS) $(INCLUDES) -o $@ $^
 
 debug: fclean
